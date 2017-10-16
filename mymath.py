@@ -13,5 +13,9 @@ def listmax(l):
 
 
 if __name__ == "__main__":
-    mylist = [1, 2, 3]
+    import sys
+    mylist = []
+    for arg in sys.argv[1:]:
+        mylist.append(int(arg))
     print(listmax(mylist))
+
