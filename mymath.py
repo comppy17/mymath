@@ -1,8 +1,5 @@
 def mymax(x, y):
-    if x > y:
-        return x
-    else:
-        return y
+    return listmax([x, y])
 
 def listmax(l):
     lmax = 0
