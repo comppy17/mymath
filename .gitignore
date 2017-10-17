@@ -1,3 +1,7 @@
 *.ipynb*
 *.pyc
 *.swp
+.cache
+venv*
+.coverage
+htmlcov
