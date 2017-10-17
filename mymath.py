@@ -11,6 +11,10 @@ def mymax(x, y):
     return listmax([x, y])
 
 def listmax(l):
+    """
+    Returns the max number from a list of numbers
+    """
+
     lmax = 0
     for i in l:
         if i > lmax:
