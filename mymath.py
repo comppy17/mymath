@@ -1,4 +1,13 @@
 def mymax(x, y):
+    """
+    Returns the max of two numbers
+
+    Input parameters: x, y (numbers)
+
+    >>> mymax(3, 5)
+    5
+   
+    """
     return listmax([x, y])
 
 def listmax(l):
