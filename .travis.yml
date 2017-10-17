@@ -3,7 +3,7 @@ python:
         - "2.7"
         - "3.6"
 install:
-        pip install pytest pytest-cov
+        pip install pytest pytest-cov python-coveralls
 script:
         python -m pytest test_mymath.py -v --cov=mymath --cov-report=html
 after_sucess:
