@@ -21,6 +21,15 @@ def listmax(l):
             lmax = i
     return lmax
 
+def filemax(f):
+
+    lmax = 0
+    for line in f:
+        i = float(line)
+        if i > lmax:
+            lmax = i
+    return lmax
+
 
 if __name__ == "__main__":
     import sys
