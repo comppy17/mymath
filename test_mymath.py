@@ -1,9 +1,11 @@
 import mymath
+import unittest.mock as mock
 
 def test_mymax():
     assert mymath.mymax(3, 5) == 5
 
-def test_filemax():
+@mock.patch('mymath.open')
+def test_filemax(mock_open):
 #   with open('test.dat', 'w') as f:
 #       f.write("1\n")
 #       f.write("5\n")
@@ -12,7 +14,7 @@ def test_filemax():
 #   with open('test.dat') as f:
 #       fm = mymath.filemax(f)
 
-    fake_file = ["1", "5", "3"]
-    fm = mymath.filemax(fake_file)
+    mock_open.return_value = ["1", "5", "3"]
+    fm = mymath.filemax('test.dat')
 
     assert fm == 5

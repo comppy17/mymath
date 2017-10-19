@@ -21,7 +21,9 @@ def listmax(l):
             lmax = i
     return lmax
 
-def filemax(f):
+def filemax(fname):
+
+    f = open(fname)
 
     lmax = 0
     for line in f:
