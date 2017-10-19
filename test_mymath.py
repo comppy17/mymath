@@ -1,5 +1,8 @@
 import mymath
-import unittest.mock as mock
+try:
+    import unittest.mock as mock
+except ImportError:
+    import mock
 
 def test_mymax():
     assert mymath.mymax(3, 5) == 5
