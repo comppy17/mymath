@@ -6,6 +6,6 @@ install:
         pip install pytest pytest-cov python-coveralls
 script:
         python -m pytest test_mymath.py -v --cov=mymath --cov-report=html
-after_sucess:
+after_success:
         - coveralls
 
